@@ -3,7 +3,26 @@ Content-Type: application/json
 
 
 {
-    "title": "Unite Summit",
-    "details": "Evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "title": "New Event",
+    "details": null,
+    "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/c58832f1-deed-45da-806c-0f5a16a85c50/attendees
+Content-Type: application/json
+
+
+{
+    "name": "Teste Testando",
+    "email": "teste3@mail.com"
+}
+
+###
+
+GET http://localhost:3333/events/c58832f1-deed-45da-806c-0f5a16a85c50
+
+###
+
+GET http://localhost:3333/attendees/2/badge
